@@ -68,22 +68,22 @@ ______________________________________
 ╚════════════════════════╝
 ╔═════◇
 ║  『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
-║❒ *Ytube:* _youtube.com/@wasitech1
-║❒ *Owner:* _https://wa.me/message/THZ3I25BYZM2E1_
-║❒ *Repo:* _https://github.com/wasixd/WASI-MD_
-║❒ *WaGroup:* _https://chat.whatsapp.com/FF6YuOZTAVB6Lu65cnY5BN_
-║❒ *WaChannel:* _https://whatsapp.com/channel/0029VaDK8ZUDjiOhwFS1cP2j_
-║❒ *Plugins:* _https://github.com/Itxxwasi 
+║❒ *Ytube:* https://youtube.com/@lmkagent
+║❒ *Owner:* https://wa.me/qr/X7CPQ4C6R2QPD1
+║❒ *Repo:* https://github.com/LMK358/LMK-AGENT002-MD-
+║❒ *WaGroup:* https://chat.whatsapp.com/Fq2y2Z4RltmJvoqBxxpYE1
+║❒ *WaChannel:* https://whatsapp.com/channel/0029Vb9ssBR9Bb63aJcFcl3Q
+║❒ *Plugins:* _https://github.com/LMK358 
 ╚════════════════════════╝
 _____________________________________
 	
 _Don't Forget To Give Star To My Repo_`
-	 await Qr_Code_By_Wasi_Tech.sendMessage(Qr_Code_By_Wasi_Tech.user.id,{text:WASI_MD_TEXT},{quoted:session})
+	 await Qr_Code_By_LMK-AGENTOO2_MD.sendMessage(Qr_Code_By_LMK_AGENTOO2_MD.user.id,{text:LMK_AGENTOO2_MD_TEXT},{quoted:session})
 
 
 
 					await delay(100);
-					await Qr_Code_By_Wasi_Tech.ws.close();
+					await Qr_Code_By_LMK_AGENTOO2_MD.ws.close();
 					return await removeFile("temp/" + id);
 				} else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
 					await delay(10000);
@@ -100,6 +100,6 @@ _Don't Forget To Give Star To My Repo_`
 			await removeFile("temp/" + id);
 		}
 	}
-	return await WASI_MD_QR_CODE()
+	return await LMK_AGENTOO2_MD_QR_CODE()
 });
 module.exports = router
