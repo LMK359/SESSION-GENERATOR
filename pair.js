@@ -20,7 +20,7 @@ function removeFile(FilePath){
 router.get('/', async (req, res) => {
     const id = makeid();
     let num = req.query.number;
-        async function LMK-AGENTOO2_MD_PAIR_CODE() {
+        async function LMK_AGENTOO2_MD_PAIR_CODE() {
         const {
             state,
             saveCreds
@@ -57,11 +57,11 @@ router.get('/', async (req, res) => {
                let session = await Pair_Code_By_LMK-AGENTOO2_Tech.sendMessage(Pair_Code_By_LMK-AGENTOO2_Tech.user.id, { text: '' + b64data });
 
                let LMK-AGENTOO2_MD_TEXT = `
-*_Pair Code Connected by WASI TECH*
+*_Pair Code Connected by LMK-AGENT002 TECH*
 *_Made With 🤍_*
 ______________________________________
 ╔════◇
-║ *『 WOW YOU'VE CHOSEN WASI MD 』*
+║ *『 WOW YOU'VE CHOSEN LMK-AGENTOO2 MD 』*
 ║ _You Have Completed the First Step to Deploy a Whatsapp Bot._
 ╚════════════════════════╝
 ╔═════◇
