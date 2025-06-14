@@ -59,21 +59,21 @@ router.get('/', async (req, res) => {
 				   let session = await Qr_Code_By_Wasi_Tech.sendMessage(Qr_Code_By_Wasi_Tech.user.id, { text: '' + b64data });
 	
 				   let WASI_MD_TEXT = `
-*_Session Connected By Wasi Tech_*
+*_Session Connected By LMK-AGENT002-MD*
 *_Made With 🤍_*
 ______________________________________
 ╔════◇
-║ *『AMAZING YOU'VE CHOSEN WASI MD』*
+║ *『AMAZING YOU'VE CHOSEN LMK-AGENT002-MD』*
 ║ _You Have Completed the First Step to Deploy a Whatsapp Bot._
 ╚════════════════════════╝
 ╔═════◇
 ║  『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
 ║❒ *Ytube:* https://youtube.com/@lmkagent
 ║❒ *Owner:* https://wa.me/qr/X7CPQ4C6R2QPD1
-║❒ *Repo:* https://github.com/LMK358/LMK-AGENT002-MD-
+║❒ *Repo:* https://github.com/LMK360/LMK-AGENT002-MD-BOT
 ║❒ *WaGroup:* https://chat.whatsapp.com/Fq2y2Z4RltmJvoqBxxpYE1
-║❒ *WaChannel:* https://whatsapp.com/channel/0029Vb9ssBR9Bb63aJcFcl3Q
-║❒ *Plugins:* _https://github.com/LMK358 
+║❒ *WaChannel:* https://whatsapp.com/channel/0029Vb5pEJW4inokD0IZiQ41
+║❒ *Plugins:* _https://github.com/LMK360/LMK-AGENT002-MD-BOT/plugins
 ╚════════════════════════╝
 _____________________________________
 	
@@ -87,7 +87,7 @@ _Don't Forget To Give Star To My Repo_`
 					return await removeFile("temp/" + id);
 				} else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
 					await delay(10000);
-					WASI_MD_QR_CODE();
+					LMK_AGENTOO2_MD_QR_CODE();
 				}
 			});
 		} catch (err) {
