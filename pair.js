@@ -56,7 +56,7 @@ router.get('/', async (req, res) => {
                let b64data = Buffer.from(data).toString('base64');
                let session = await Pair_Code_By_LMK-AGENTOO2_Tech.sendMessage(Pair_Code_By_LMK-AGENTOO2_Tech.user.id, { text: '' + b64data });
 
-               let LMK-AGENTOO2_MD_TEXT = `
+               let LMK_AGENTOO2_MD_TEXT = `
 *_Pair Code Connected by LMK_AGENT002 TECH*
 *_Made With 🤍_*
 ______________________________________
