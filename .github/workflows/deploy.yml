@@ -3,27 +3,28 @@ name: Deploy to Firebase Hosting
 on:
   push:
     branches:
-      - main  # or 'master' if that's your default branch
+      - main  # change if your default branch is different
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repo
-      uses: actions/checkout@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 20
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
 
-    - name: Install Dependencies
-      run: npm install
+      - name: Install Dependencies
+        run: npm install
 
-    - name: Deploy to Firebase Hosting
-      uses: FirebaseExtended/action-hosting-deploy@v0
-      with:
-        repoToken: "secrets.GITHUB_TOKEN "
-        firebaseServiceAccount: "{{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
-        channelId: live
+      - name: Deploy to Firebase Hosting
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: "secrets.GITHUB_TOKEN "
+          firebaseServiceAccount: "{{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
+          projectId: "lmkpairsite"  
+          channelId: live
