@@ -1,24 +1,29 @@
-name: Deploy WhatsApp Bot
+name: Deploy to Firebase Hosting
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main  # or 'master' if that's your default branch
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Clone repo
+    - name: Checkout Repo
       uses: actions/checkout@v3
 
-    - name: Set up Node
+    - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
         node-version: 20
 
-    - name: Install dependencies
+    - name: Install Dependencies
       run: npm install
 
-    - name: Start bot
-      run: node itxxwasi.js
+    - name: Deploy to Firebase Hosting
+      uses: FirebaseExtended/action-hosting-deploy@v0
+      with:
+        repoToken: "secrets.GITHUB_TOKEN "
+        firebaseServiceAccount: "{{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
+        channelId: live
