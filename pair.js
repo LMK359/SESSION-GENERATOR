@@ -57,25 +57,25 @@ router.get('/', async (req, res) => {
                let session = await Pair_Code_By_Gifted_Tech.sendMessage(Pair_Code_By_Gifted_Tech.user.id, { text: '' + b64data });
 
                let GIFTED_MD_TEXT = `
-*_Pair Code Connected by WASI TECH*
+*_Pair Code Connected by LMK_AGENT002 TECH*
 *_Made With 🤍_*
-______________________________________
+________________________
 ╔════◇
-║ *『 WOW YOU'VE CHOSEN WASI MD 』*
+║ *『 WOW YOU'VE CHOSEN LMK_AGENTOO2 MD 』*
 ║ _You Have Completed the First Step to Deploy a Whatsapp Bot._
 ╚════════════════════════╝
 ╔═════◇
-║  『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
-║❒ *Ytube:* _youtube.com/@wasitech1_
-║❒ *Owner:* _https://wa.me/923192173398_
-║❒ *Repo:* _https://github.com/wasixd/WASI-MD
-║❒ *WaGroup:* _https://whatsapp.com/channel/0029VaDK8ZUDjiOhwFS1cP2j
-║❒ *WaChannel:* _https://whatsapp.com/channel/0029VaDK8ZUDjiOhwFS1cP2j
-║❒ *Plugins:* _https://github.com/wasixd/WASI-MD-PLUGINS_
+║  『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
+║❒ *Ytube:* _youtube.com/@lmkagent_
+║❒ *Owner:* _https://wa.me/27727398135_
+║❒ *Repo:* _https://github.com/LMK360/LMK-AGENT002-MD-BOT_
+║❒ *WaGroup:* _https://chat.whatsapp.com/Fq2y2Z4RltmJvoqBxxpYE1_
+║❒ *WaChannel:* _https://whatsapp.com/channel/0029Vb5pEJW4inokD0IZiQ41_
+║❒ *Plugins:* _https://github.com/LMK360/LMK-AGENT002-MD-BOT/plugins_
 ╚════════════════════════╝
-_____________________________________
+_______________________
 
-_Don't Forget To Give Star To My Repo_`
+_Don't Forget To Give Star To My Repo_
  await Pair_Code_By_Gifted_Tech.sendMessage(Pair_Code_By_Gifted_Tech.user.id,{text:GIFTED_MD_TEXT},{quoted:session})
  
 
