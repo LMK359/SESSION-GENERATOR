@@ -43,10 +43,8 @@ app.get("/code", async (req, res) => {
   if (connection === "open") 
       console.log("✅ Connected");
       sock.end();
-    );
 
   sock.ev.on("creds.update", saveState);
-);
 
 // ===== Pair route =====
 const pairRouter = require("./pair");
