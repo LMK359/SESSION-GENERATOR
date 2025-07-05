@@ -58,4 +58,4 @@ const qrRouter = require("./wasiqr");
 app.use("/qr", qrRouter);
 
 // ===== Start server =====
-app.listen(PORT, () => console.log(`✅ API running on port{PORT}`));
+app.listen(PORT, () => console.log(`✅ API running on port ${PORT}`));
