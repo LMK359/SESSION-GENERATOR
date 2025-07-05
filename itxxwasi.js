@@ -1,6 +1,3 @@
-Thanks! Your `server.js` has a few syntax issues and needs proper handling of the `/code`, `/pair`, and `/qr` routes. Here's a *clean, fixed, and updated* version:
-
-```js
 const express = require("express");
 const fs = require("fs");
 const path = require("path");
