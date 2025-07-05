@@ -38,10 +38,9 @@ app.get("/code", async (req, res) => {
       res.send({
         code: qr || pairingCode,
         type: qr ? "qr" : "pair"
-      );
-    
-
-    if (connection === "open") 
+      });
+  }
+  if (connection === "open") 
       console.log("✅ Connected");
       sock.end();
     );
