@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scan QR</title>
+  <style>
+    body {
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      color: white;
+      font-family: Arial;
+    }
+    img {
+      border: 3px solid white;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      width: 250px;
+      height: 250px;
+    }
+    h2 {
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h2>Scan this QR Code in WhatsApp</h2>
+  <img id="qr" src="" alt="QR Code will appear here"/>
+  <p>Keep this page open until your phone connects.</p>
+
+  <script>
+    const qrImg = document.getElementById("qr");
+
+    async function loadQR() {
+      qrImg.src = "https://session-lmk.cyclic.app/qr"; // replace with your deployed wasiqr endpoint
+    }
+
+    loadQR();
+  </script>
+</body>
+</html>
