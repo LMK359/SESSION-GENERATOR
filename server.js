@@ -32,19 +32,20 @@ app.get("/code", async (req, res) => {
 
   sock.ev.on("connection.update", async (update) => {
     const { qr, pairingCode, connection } = update;
-
-    if (!sent && (qr || pairingCode)) {
-      sent = true;
-      res.send({
+    sent = true;
+      res.send(
         code: qr || pairingCode,
         type: qr ? "qr" : "pair"
-      });
-  }
-  if (connection === "open") 
+      );
+    
+
+    if (connection === "open") 
       console.log("✅ Connected");
       sock.end();
+    );
 
   sock.ev.on("creds.update", saveState);
+);
 
 // ===== Pair route =====
 const pairRouter = require("./pair");
