@@ -1,7 +1,3 @@
-Sure! Here's a fully updated `qr.js` that includes your existing connection logic *plus* a new `/session` endpoint to provide current connection status and session ID in JSON. This will help your frontend fetch session info separately from the QR code.
-
-```js
-const express = require("express");
 const app = express();
 const pino = require("pino");
 const { toBuffer } = require("qrcode");
