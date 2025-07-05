@@ -31,17 +31,14 @@ app.get("/code", async (req, res) => {
   let sent = false;
 
   sock.ev.on("connection.update", async (update) => {
-    const  qr, pairingCode, connection  = update;
+    const { qr, pairingCode, connection } = update;
 
-    if (!sent        (qr || pairingCode)) 
+    if (!sent && (qr || pairingCode)) {
       sent = true;
-      res.send(
+      res.send({
         code: qr || pairingCode,
         type: qr ? "qr" : "pair"
-      );
-    
-
-    if (connection === "open") 
+        if (connection === "open") 
       console.log("✅ Connected");
       sock.end();
     );
@@ -58,4 +55,4 @@ const qrRouter = require("./wasiqr");
 app.use("/qr", qrRouter);
 
 // ===== Start server =====
-app.(PORT, () => console.log(`✅ API running on port{PORT}`));
+app.listen(PORT, () => console.log(`✅ API running on port{PORT}`));
