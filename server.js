@@ -48,7 +48,6 @@ app.get("/code", async (req, res) => {
   });
 
   sock.ev.on("creds.update", saveState);
-);
 
 // ===== Pair route =====
 const pairRouter = require("./pair");
